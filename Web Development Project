@@ -1,9 +1,25 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+  <head>
+    <!--This is to make sure it fits the screen of any device.--> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=s1">
+  <head>	
+  <body>
+    <!--This is my Nav Bar--> 
+  <nav class="navbar">
+  <ol>
+    <li><a href="index.html">Home<a</li>
+    <li><a href="reviews.html">Resturants<a</li>
+    <li><a href="Gallery.html">Gallery<a</li>
+  <ol>
+      <!--Where I lay out the goal of my site--> 
+<h1> The Best Places I've Eaten at<h1>
+By: Zachary Brown</h1>
+  <h3>Why do I enjoy food so much? </h3>
+<p>For as long as I can remember I have been a huge foodie, usually being helped by Dad. Who let me have a variety of foods at a young age like raw oysters when I was four, and sushi when I was seven.
+Thus, ever since a young age food has been a core part of who I am with a good meal being one of the most important things to me. On this Page I will be laying what I think are the best places I've ever eaten at.
+I tried to make sure that the list is a diverse one, but I do have my own personal taste so some things might be missing </p>
+<a href="Reviews.html" ></a>
 </body>
-</html> 
+</html>
