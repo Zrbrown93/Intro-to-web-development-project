@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="style.css" href="style.css">
     <!--This is to make sure it fits the screen of any device.--> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=s1">
   <head>	
   <body>
+    <style>
+      body {
+        background-color: #333;
+      }
+    </style>
     <!--This is my Nav Bar--> 
   <nav class="navbar">
   <ol>
@@ -25,12 +31,24 @@ I tried to make sure that the list is a diverse one, but I do have my own person
 </html>
 
 
-
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      table,th, td{ 
+        boder: 1 px solid black 
+          border-colapse: collapse:
+      }
+        body {
+          background-color: #333;
+        }
+      th,td{
+        padding: 20px;
+      }
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  </style>
+    
   <head>	
   <body>
   <nav class="navbar">
@@ -41,17 +59,18 @@ I tried to make sure that the list is a diverse one, but I do have my own person
   <ol>
       <!--This is where I Lay out all the info on my favorite resturants--> 
       <table width="200" border="1" class="table">
+        <table style="width: 100%;"
         <tr>
           <th> Restaurant Name <th>
           <th> Price </th>
           <th> Location </th>
           <th> Cuisine </th>
-          <th> Average Review Score (out of 100) </th>
+          <th style="width:25%"> Review Score (out of 100) </th>
           <th> Address</th>
         </tr>
         <tr>
 
-          </TD><a href="https://tomorestaurant.com/">Tomo</a><TD>
+          <TD><a href="https://tomorestaurant.com//">Tomo</a><TD>
           <td>$25-$50</td>
           <td>Atlanta, Georgia</td>
           <td>Japanese</td>
@@ -123,7 +142,7 @@ I tried to make sure that the list is a diverse one, but I do have my own person
        <td>1125 Ernest W Barrett Pkwy NW, Kennesaw, GA 30144</td>
       <tr>
       </tr>
-      <TD><a href="https://www.carminesnyc.com/">carmines</a>
+      <TD><a href="https://www.carminesnyc.com/">Carmines</a><TD>
       <td>$25-$50</td>
       <td>6 locations (went to the upper west side NYC location) </td>
       <td>Family Style Italian</td>
@@ -140,34 +159,40 @@ I tried to make sure that the list is a diverse one, but I do have my own person
       <td>1003 Barton Springs Rd, Austin, TX 78704</td>
       <tr>
        </table>
-    form action="/action.php" method="get" target="_blank">
-     Email: <input type="text" name="Email"><br>
+    <p>What restaruant would you like to try?</p>
+     your favorite is: <input type="text" name="Favorite"><br>
     <input type="submit" value="Submit">
      </form>
+    <script src="script.js"></script>
 
-    <p>Click on the submit button, and the input will be sent to a page on the server called "/action_page.php".</p>
-<p>If you'd like to be sent to your email, please enter it below</p>
 </body>
 </html>
+      </style>
 
-<!DOCTYPE html>
+
+!DOCTYPE html>
 <html>
-
 <head>
+  <link rel="style.css" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ol>
+  </nav>
 
-  <head>
-
-  <body>
-    <nav class="navbar">
-      <ol>
-        <li><a href="index.html">Home<a< /li>
-        <li><a href="reviews.html">Reviews<a< /li>
-        <li><a href="Gallery.html">Gallery <a< /li>
-      <ol>
-      <!--Whre I lay out the pictures for my gallery. Showing thew different food I've eaten from these restaraunts-->
-      <img src="/20180901_191453.jpg" alt="Sushi from Tomo">
+  <!-- Where I lay out the pictures for my gallery. Showing the different food I've eaten from these restaurants -->
+      <img src="/20180901_191453.jpg" alt="Sushi from Tomo" width="400" height="250">
       <img src="/20180901_194117.jpg" alt="Tomo Chcolate Crepe Dessert">
       <img src="/PXL_20230717_161911129.jpg" alt="Bagel from Abosulte Bagel, with Lox, cream cheese, and veggies">
       <img src="/Screenshot 2024-04-14 at 22-28-49 Google Maps.png" alt="Cream Cheese Collection">
@@ -187,14 +212,17 @@ I tried to make sure that the list is a diverse one, but I do have my own person
       <img src="/Screenshot 2024-04-14 at 22-45-57 Google Maps.png" alt="Pasta at Carmines"">  
       <img src="/IMG_20220405_192548.jpg" alt="Brisket and side at Terry Black's BBQ">
       <img src="/IMG_20220405_192548.jpg" alt="Beef Rib and sides at Terry Black's BBQ">
-     
+
+
 
   </body>
   </html>
 
 
+
 body{
-  margin: 0px;
+  margin: 1%;
+  background-color: #333;
 }
 ul{
   padding: 5px;
@@ -207,7 +235,7 @@ h1{
   overflow: hidden;
 }
 .navbar a{
-  color: darkblue;
+  color: black;
   text-decoration: none;
   padding: 14px 16px;
   display: block;
@@ -237,3 +265,4 @@ const server = createServer((req, res) => {
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
+});
